@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dylan’s 17th Birthday Celebration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --dark-wood: #3b2a1a;
+      --mid-wood: #6b513d;
+      --light-wood: #c1a88c;
+      --moss: #7a8b6f;
+      --cream: #f6f3ee;
+      --text: #2c241d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Serif JP", "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background-color: var(--cream);
+      background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+      background-repeat: repeat;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+      height: 380px;
+    }
+
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(60%) contrast(90%);
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #eaeaea;
+    }
+
+    .header-nav {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(59, 42, 26, 0.75);
+      backdrop-filter: blur(4px);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 10px 0;
+      font-family: "Noto Sans JP", sans-serif;
+    }
+
+    .header-nav a {
+      color: #f3e9d6;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+      letter-spacing: 0.5px;
+    }
+
+    .header-nav a:hover {
+      color: var(--light-wood);
+      text-shadow: 0 0 5px rgba(255,255,255,0.2);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      padding: 28px;
+      border-top: 6px solid var(--light-wood);
+      background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
+    }
+
+    section {
+      margin-bottom: 32px;
+      border-left: 5px solid var(--moss);
+      padding-left: 16px;
+    }
+
+    section h2 {
+      color: var(--dark-wood);
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-family: "Noto Serif JP", serif;
+      letter-spacing: 1px;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 10px 16px;
+    }
+
+    dt {
+      font-weight: bold;
+      color: var(--mid-wood);
+    }
+
+    dd {
+      margin: 0;
+      color: var(--text);
+    }
+
+    ul {
+      list-style: square;
+      margin: 0;
+      padding-left: 20px;
+      color: var(--mid-wood);
+    }
+
+    a.email {
+      color: var(--mid-wood);
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid var(--moss);
+      transition: 0.2s;
+    }
+
+    a.email:hover {
+      color: var(--dark-wood);
+      border-color: var(--light-wood);
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: var(--dark-wood);
+      color: #f3e9d6;
+      text-align: center;
+      padding: 20px 0;
+      font-family: "Noto Sans JP", sans-serif;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      letter-spacing: 0.3px;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .footer-nav a {
+      color: #f3e9d6;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .footer-nav a:hover {
+      color: var(--light-wood);
+    }
+
+    @media (max-width: 600px) {
+      .header-nav {
+        flex-wrap: wrap;
+        gap: 18px;
+        font-size: 0.9rem;
+      }
+
+      .footer-nav {
+        gap: 16px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn.pixabay.com/photo/2025/05/16/09/06/meiji-temple-9603371_1280.jpg" alt="Meiji Jingu Temple, Tokyo">
+    <div class="overlay">
+      <h1>Dylan’s 17th Birthday Celebration</h1>
+      <p>July 17, 2026 · 10:00 AM – 5:00 PM</p>
+    </div>
+    <nav class="header-nav">
+      <a href="#details">Event Details</a>
+      <a href="#bring">What to Bring</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#map">Map</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="details">
+      <h2>Event Details</h2>
+      <dl>
+        <dt>Venue</dt>
+        <dd>Forest Terrace Meiji Jingu, Tokyo, Japan</dd>
+        <dt>Date</dt>
+        <dd>July 17, 2026</dd>
+        <dt>Time</dt>
+        <dd>10:00 AM – 5:00 PM</dd>
+        <dt>Dress Code</dt>
+        <dd>Formal · Japanese · Casual</dd>
+      </dl>
+    </section>
+
+    <section id="bring">
+      <h2>What to Bring</h2>
+      <ul>
+        <li>Gift (optional)</li>
+      </ul>
+    </section>
+
+    <section id="rsvp">
+      <h2>RSVP</h2>
+      <p>Please RSVP by email:</p>
+      <p><a href="mailto:reutadylan1@gmail.com" class="email">reutadylan1@gmail.com</a></p>
+    </section>
+
+    <section id="map" class="map">
+      <h2>Location Map</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.1553757703623!2d139.6975023967896!3d35.673176000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cba139aaaab%3A0x57767eb3444363d8!2sForest%20Terrace%20Meiji%20Jingu!5e0!3m2!1sen!2sph!4v1759836081517!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Person</h2>
+      <p>Phone: 0991 544 6491</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>We look forward to celebrating with you in the calm of Meiji Jingu’s forest — a day to remember.</p>
+    <nav class="footer-nav">
+      <a href="#details">Event Details</a>
+      <a href="#bring">What to Bring</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#map">Map</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>
